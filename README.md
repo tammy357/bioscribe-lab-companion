@@ -1,7 +1,5 @@
 # BioScribe: The Intelligent Lab Companion
 
-Built using Snowflake Cortex Multimodal AI.
-
 ## What it does
 BioScribe transforms handwritten lab notes into structured digital data using AI vision. It features:
 
