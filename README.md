@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS BIO_HACK.LAB_DATA.LAB_LEDGER (
 -- 1. Set your current role context (usually ACCOUNTADMIN or SYSADMIN for setup)
 SET MY_USER_ROLE = CURRENT_ROLE();
 
--- 2. Grant usage on the hierarchy so the app can "see" the folders
+-- 2. Grant usage on the hierarchy so the app can see the folders
 GRANT USAGE ON DATABASE BIO_HACK TO ROLE identifier($MY_USER_ROLE);
 GRANT USAGE ON SCHEMA BIO_HACK.LAB_DATA TO ROLE identifier($MY_USER_ROLE);
 
@@ -53,7 +53,7 @@ GRANT ALL PRIVILEGES ON TABLE BIO_HACK.LAB_DATA.LAB_LEDGER TO ROLE identifier($M
 GRANT ALL PRIVILEGES ON STAGE BIO_HACK.LAB_DATA.NOTEBOOK_IMAGES TO ROLE identifier($MY_USER_ROLE);
 
 -- 4. THE MOST IMPORTANT PART: Grant access to Snowflake Cortex AI
--- Without this, the BioScribe "Brain" (Claude 3.7) will not respond.
+-- Without this Claude 3.7 will not respond.
 GRANT DATABASE ROLE SNOWFLAKE.CORTEX_USER TO ROLE identifier($MY_USER_ROLE);
 
 ```
