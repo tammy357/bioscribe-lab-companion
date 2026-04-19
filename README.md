@@ -8,10 +8,16 @@ BioScribe transforms handwritten lab notes into structured digital data using AI
 - **Lab Ledger** — Persistent storage in Snowflake Data Cloud with export capability
 
 ## Tech Stack
-- Snowflake Cortex AI (claude-4-6-sonnet)
-- Streamlit in Snowflake
-- Snowflake Stages (image storage)
-- Snowflake Tables (structured data persistence)
+
+- AI Engine: Snowflake Cortex AI API (claude-4-6-sonnet)
+
+- Data Orchestration: Snowpark Python API
+
+- Frontend: Streamlit in Snowflake
+
+- Storage: Snowflake Stages (Files API) & Snowflake Tables
+
+- Languages: Python, SQL
 
 ##  Setup Instructions
 
