@@ -57,6 +57,7 @@ CREATE TABLE IF NOT EXISTS BIO_HACK.LAB_DATA.LAB_LEDGER (
 
 1. In the Streamlit editor, select all default code (`Ctrl+A`) and delete it
 2. Copy the contents of `streamlit_app.py` from this repo and paste it in
+3. Ensure you click the "Packages" button in the Streamlit editor and verify that snowflake-snowpark-python is selected. If you are using any additional libraries (like pandas or pillow), add them there as well.
 
 ### Step 4: Upload the Logo
 
