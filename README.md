@@ -53,7 +53,7 @@ GRANT ALL PRIVILEGES ON TABLE BIO_HACK.LAB_DATA.LAB_LEDGER TO ROLE identifier($M
 GRANT ALL PRIVILEGES ON STAGE BIO_HACK.LAB_DATA.NOTEBOOK_IMAGES TO ROLE identifier($MY_USER_ROLE);
 
 -- 4. THE MOST IMPORTANT PART: Grant access to Snowflake Cortex AI
--- Without this Claude 3.7 will not respond.
+-- Without this claude-4-6-sonnet will not respond.
 GRANT DATABASE ROLE SNOWFLAKE.CORTEX_USER TO ROLE identifier($MY_USER_ROLE);
 
 ```
